@@ -25,7 +25,9 @@ exports.isAutheticatedUser=async(req,res,next)=>{
         // console.log(error)
         return next(new ErrorHandler(error.message,error.code))
     }
+    
 }
+
 
 exports.authorizedRole=async(req,res,next)=>{
     try {
