@@ -1,6 +1,16 @@
 # AWS Deployment 
 ### 1.	Create two roles
 ### 2.	Create and launch Ec2 Intance
+### 3.	Create Pipeline 
+###    3.1	Create Application
+###       3.1.1	Crate Deployement Group
+###    3.2	Create Pipeline
+### 4.	Change Security Group
+### 5.	Write Scripts (.yml file ,stop_server,start_server,Install_dependecies)
+### 6.	Connect Ec2 Instance 
+### 7.	Install and use nginx to reverse proxy
+### 8.	Test
+
 
 
 
@@ -92,6 +102,28 @@
 ### After this we save this file using following cmd or actions;
 #### Ctr+O -> enter        ….save
 #### Ctr + X ->enter       …..exit
+
+
+## After this we check ….is our project running without error?
+
+### For this we go to our project dir
+####  In this case cd /var/www ->enter 
+#### then we enter in our project folder where server.js file is present
+### Then run the project manually ->
+#### Pm2 start server.js -> to run project cmd
+## If nvm is not present ….install it using
+#### Cmd1-> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+#### Cmd2->. ~/.nvm/nvm.sh
+#### Cmd3->  nvm install 16
+## If pm2 is not install … install it with cmd given in file  stop_server
+#### sudo npm install pm2 -g
+### After this we restart nginx server by giving  command 
+#### sudo service nginx restart
+
+## Then copy paste our Ec2 public IP address to our browser to check is our website is live successfully or not.
+# (Manually copy ip address and paste in browser)
+ 
+
  
 
 
