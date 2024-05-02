@@ -5,7 +5,9 @@ sudo chmod -R 777 /var/www
 
 
 # Navigate into our working directory where we have all our files
-cd /var/www
+# we enter to the file where our server.js file is present.
+cd /var/www   
+
  
 # Add npm and node to path using NVM (Node Version Manager) 
 export NVM_DIR="$HOME/.nvm"
