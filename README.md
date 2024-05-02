@@ -1,3 +1,4 @@
+### https://docs.google.com/document/d/1pehwT_W_yuUhcVHFW_02z-juIjkMm0go/edit?usp=drive_link&ouid=116820740472433395623&rtpof=true&sd=true
 # AWS Deployment 
 ### 1.	Create two roles
 ### 2.	Create and launch Ec2 Intance
