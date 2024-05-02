@@ -84,9 +84,9 @@
 #### sudo nano configuration.conf -> create configuration file and read , write operation.
 #### Then we paste following script in this file…
 ##### server {
-##### server_name <Your EC2 IP> ; 
+##### server_name << Your EC2 IP> > ; 
 ##### location / {
-   #####     proxy_pass http://127.0.0.1:<Your Project local Port>;
+   #####     proxy_pass http://127.0.0.1:<< Your Project local Port> >;
    #####     }
    ##### }
 ### After this we save this file using following cmd or actions;
